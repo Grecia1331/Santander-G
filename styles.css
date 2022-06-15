@@ -1,9 +1,25 @@
+.header {
+    /*margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;*/
+    margin: 40px 20px 0; /* top izquierda/derecha(si son los mismos solo se escribe 1) abajo*/
+    font-size: 0;
+    font-family: sans-serif;
+    height: 45px;
+  }
+
+li {
+   display: inline;
+   margin-right: 25px;
+   margin-left: 25px;
+}
+  
 body{
     background-color: #fffbf7;
 }
 
 h1 {
-    color:#fffbf7;
+    color:#025157;
     text-align: center;
 }
 
@@ -17,3 +33,56 @@ button {
     color:#fff;
     background-color: #025157;
 }
+
+.header > * {            /* >* Sin importar que hijo tenga que aplique a todo */
+    display: inline-block;
+    font-size: 16px;
+    line-height: 45px;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.logo {
+    width: 15%;
+  }
+
+.logo > img{
+    width: 15%;         /* Juntos estos valores hacen 100%= logo+navbar+actions */
+}
+                                    
+.navbar {                   
+        width: 70%;
+        text-align: left;
+        color: #025157;
+        font-weight: 500;
+ }
+
+.actions {
+    width: 15%;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 600;
+    margin-right: 10px;
+    margin-left: 10px;
+  } 
+
+.main {
+    margin-top: 140px;
+    text-align: center;
+}
+
+.actions button{
+    color: #ffffff;
+    background-color: #67b54b;
+    padding-right: 14px;
+    padding-left: 14px;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    border: 0;
+    border-radius: 5px;
+}
+
+.actions > a{
+    color:#67b54b;
+}
+
