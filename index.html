@@ -16,30 +16,52 @@
 </head>
 
 <body> <!-- lo que se ve en el navegador -->
-    <h1>Construye tu negocio</h1>  <!-- etiqueta, mas pequeño # es texto más grande -->
-    <h3> Reto 1 </h3>
-    <p> Iniciar un negocio es una aventura emocionante que puede ser muy rentable y que además es muy satisfactoria.
-        Pero si no tienes mucho dinero, a veces se convierte en un verdadero reto.</p>
-    <h3> Reto 2 </h3>
-        <p>
-            <b>Publique artículos al instante, genere más tráfico, haga crecer su lista de correo electrónico y 
-            vea el impacto de su blog en las ventas
-            </b>
-        </p>
-        <p>El dinero es importante pero 
-            <strong>la salud</strong>, más.
-        </p>
-        <form> <!-- cuando se crea un formulario es bueno ponerlo dentro de una estructura? -->
+    
+    <header class="header">
+        <!-- Regresar pagina principal-->
+        <a href="/" class="logo">
+            <img src="https://getmatcha.com/wp-content/uploads/2020/01/Icon-green.png" alt="Matcha">
+        </a>
+        <!-- Menu-->
+        <nav class="navbar"> 
+            <ul>
+                <li>Contenido</li>
+                <li>Misión</li>
+                <li>Mapa</li>
+            </ul>
+        </nav>
+        <!-- Acciones-->
+        <div class="actions">
+            <a href="">Registrarse</a>
+            <button>Empezar prueba</button>
+        </div>
+    </header>
 
-            <input type="email"/> <!-- cuadro de entrada -->
-            <button type="submit"> Enviar &rarr; <!-- character de flecha &rarr --> </button>
+    <section class="main">
+        <h1>Construye tu negocio</h1>  <!-- etiqueta, mas pequeño # es texto más grande -->
+        <h3> Reto 1 </h3>
+        <p> Iniciar un negocio es una aventura emocionante que puede ser muy rentable y que además es muy satisfactoria.
+            Pero si no tienes mucho dinero, a veces se convierte en un verdadero reto.</p>
+        <h3> Reto 2 </h3>
+            <p>
+                <b>Publique artículos al instante, genere más tráfico, haga crecer su lista de correo electrónico y 
+                vea el impacto de su blog en las ventas
+                </b>
+            </p>
+            <p>El dinero es importante pero 
+                <strong>la salud</strong>, más.
+            </p>
+            <form> <!-- cuando se crea un formulario es bueno ponerlo dentro de una estructura? -->
 
-        </form>
-        <h3>Reto 3</h3>
-        <img 
-            src="capterra.png" alt="Imagen capterra" style="width: 25vw; min-width: 140px;" />
-            <!-- nombrar imagen con alt para busquedas rapidas de telefonos sin IA (accesibilidad) o si una url se rompe-->
+                <input type="email"/> <!-- cuadro de entrada -->
+                <button type="submit"> Enviar &rarr; <!-- character de flecha &rarr --> </button>
 
+            </form>
+            <h3>Reto 3</h3>
+            <img 
+                src="capterra.png" alt="Imagen capterra" style="width: 25vw; min-width: 140px;" />
+                <!-- nombrar imagen con alt para busquedas rapidas de telefonos sin IA (accesibilidad) o si una url se rompe-->
+        </section>       
 </body>
 
 </html>
