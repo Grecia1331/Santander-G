@@ -21,6 +21,9 @@ body{
 h1 {
     color:#025157;
     text-align: center;
+    font-family:"Alegreya", serif;
+    font-weight: bold;
+    font-size: 3.2rem;
 }
 
 p {
@@ -74,10 +77,7 @@ button {
 .actions button{
     color: #ffffff;
     background-color: #67b54b;
-    padding-right: 14px;
-    padding-left: 14px;
-    padding-bottom: 12px;
-    padding-top: 12px;
+    padding: 12px 14px; /*12 es para inferior y superior, 14 para der-izq */
     border: 0;
     border-radius: 5px;
 }
