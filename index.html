@@ -16,26 +16,27 @@
 </head>
 
 <body> <!-- lo que se ve en el navegador -->
-    
-    <header class="header">
-        <!-- Regresar pagina principal-->
-        <a href="/" class="logo">
-            <img src="https://getmatcha.com/wp-content/uploads/2020/01/Icon-green.png" alt="Matcha">
-        </a>
-        <!-- Menu-->
-        <nav class="navbar"> 
-            <ul>
-                <li>Contenido</li>
-                <li>Misión</li>
-                <li>Mapa</li>
-            </ul>
-        </nav>
-        <!-- Acciones-->
-        <div class="actions">
-            <a href="">Registrarse</a>
-            <button>Empezar prueba</button>
-        </div>
-    </header>
+    <section class="fixed_header">
+        <header class="header">
+            <!-- Regresar pagina principal-->
+            <a href="/" class="logo">
+                <img src="https://getmatcha.com/wp-content/uploads/2020/01/Icon-green.png" alt="Matcha">
+            </a>
+            <!-- Menu-->
+            <nav class="navbar"> 
+                <ul>
+                    <li>Contenido</li>
+                    <li>Misión</li>
+                    <li>Mapa</li>
+                </ul>
+            </nav>
+            <!-- Acciones-->
+            <div class="actions">
+                <a href="">Registrarse</a>
+                <button>Empezar prueba</button>
+            </div>
+        </header>
+    </section>
 
     <section class="main">
         <h1>Construye tu negocio</h1>  <!-- etiqueta, mas pequeño # es texto más grande -->
@@ -62,21 +63,41 @@
                 src="capterra.png" alt="Imagen capterra" style="width: 25vw; min-width: 140px;" />
                 <!-- nombrar imagen con alt para busquedas rapidas de telefonos sin IA (accesibilidad) o si una url se rompe-->
         </section>    
-        <section>
-            <video controls
-                    poster="https://cdn.videvo.net/videvo_files/video/premium/video0036/thumbnails/computer_code00_small.jpg"></video>
+        <section class="promo">
+            <article class="imagen_video">
+                <video controls
+                        poster="https://cdn.videvo.net/videvo_files/video/premium/video0036/thumbnails/computer_code00_small.jpg">
 
-                    <source
-                        type="video/webm"
-                        src="https://cdn.videvo.net/videvo_files/video/premium/video0036/small_watermarked/computer_code00_preview.webm"/>
-                    <source
-                        type="video/mp4" 
-                        src="https://cdn.videvo.net/videvo_files/video/premium/video0036/small_watermarked/computer_code00_preview.mp4"/>
-            </video>
+                        <source
+                            type="video/webm"
+                            src="https://cdn.videvo.net/videvo_files/video/premium/video0036/small_watermarked/computer_code00_preview.webm"/>
+                        <source
+                            type="video/mp4" 
+                            src="https://cdn.videvo.net/videvo_files/video/premium/video0036/small_watermarked/computer_code00_preview.mp4"/>
+                </video>
+                        <img src="https://images.vexels.com/media/users/3/206269/isolated/preview/5bf110f14d50531aaca26c251c3441aa-doodle-de-flecha-vertical.png">
+                        
+            </article>
+            <article> <!--tiene un mayor significado e implica que sus contenidos pueden ser tratados independientemente del documento que los contiene.-->
+                <h2>Publish to your blog in minutes, not hours.</h2>
+                <p>Your blog is your most powerful asset to build, engage, and retain a loyal audience. But you don’t have hours to create content that may or may not work. With Matcha, instantly publish from our library of 10,000+ professionally written articles and build your email list faster with our powerful conversion tool.</p>
+                <form>
+                    <p>Start publishing today:</p>
+                    <input type="email" placeholder="Enter email"/>
+                    <button> Star my trial </button>
+                </form>
+
+            </article>
+        </section>  
             <br/> <!-- salto de linea-->
             <br/>
             <br/>
-        </section>   
+        <section class="features">
+            <article>Caracteristica 1</article>
+            <article>Caracteristica 2</article>
+            <article>Caracteristica 3</article>
+            <article>Caracteristica 4</article>
+        </section>
 </body>
 
 </html>

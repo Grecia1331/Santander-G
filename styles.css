@@ -8,6 +8,14 @@
     height: 45px;
   }
 
+.fixed_header{
+    position: fixed;
+    top: 0;
+    left: 0;        /* 0 para que sea jalado igual por cada lado y quede "centrado" */
+    right: 0%;
+    background-color: #fffbf7;
+}
+
 li {
    display: inline;
    margin-right: 25px;
@@ -70,7 +78,7 @@ button {
   } 
 
 .main {
-    margin-top: 140px;
+    margin-top: 285px;  /* antes tenia 140*/
     text-align: center;
 }
 
@@ -86,3 +94,39 @@ button {
     color:#67b54b;
 }
 
+.promo {
+    display: flex;  /*Solo ocupara el espacio que necesita */
+    
+}
+
+.promo > h2 {
+    color: #025157;
+    font-size: 16px;
+}
+
+.promo > p {
+    color: #1aa71a;
+    font-size: 16px;
+}
+
+.promo > form > p{
+    color: #8b8b8bcc;
+    font-size: 16px;
+}
+
+.imagen_video{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagen_video > img{
+    width: 15%;
+    margin-top: 12px;
+}
+
+.features {
+    display: grid;
+    /*grid-template-columns: repeat(2, 300px); Con repeat digo cuantas columnas y c/u tendrá esos pixeles */
+    grid-template-columns: 1fr 1fr; /*Con fracciones se ajusta, es responsivo */
+}
