@@ -5,24 +5,26 @@
 <head>
     <meta charset="UTF-8"> <!-- lenguaje..latin? -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- ventana -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">  <!-- ventana / si es scalable=no..el sitio no permite escalas-->
     <title>Matcha</title> <!-- nombre que aparece en la pestaña, que es Matcha? -->
         <!-- <style>
             h1{
                 color: #025157
             }
         </style> Esto pondria a todos los h1 en un color pero es mala practica, mejor usar una hoja de estilos css-->
-    <link rel="stylesheet" href="styles.css"> <!-- ligar hoja de estilos con index...href:url donde la va a buscar -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        
+        <link rel="stylesheet" href="styles.css"> <!-- ligar hoja de estilos con index...href:url donde la va a buscar -->
 </head>
 
 <body> <!-- lo que se ve en el navegador -->
-    <section class="fixed_header">
+    <!-- <section class="fixed_header">
         <header class="header">
-            <!-- Regresar pagina principal-->
+             Regresar pagina principal
             <a href="/" class="logo">
                 <img src="https://getmatcha.com/wp-content/uploads/2020/01/Icon-green.png" alt="Matcha">
             </a>
-            <!-- Menu-->
+             Menu
             <nav class="navbar"> 
                 <ul>
                     <li>Contenido</li>
@@ -30,20 +32,55 @@
                     <li>Mapa</li>
                 </ul>
             </nav>
-            <!-- Acciones-->
+             Acciones
             <div class="actions">
                 <a href="">Registrarse</a>
                 <button>Empezar prueba</button>
             </div>
         </header>
-    </section>
+    </section> -->
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a href="#" class="logo">
+                <img src="https://getmatcha.com/wp-content/uploads/2020/01/Icon-green.png" alt="Matcha">
+            </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Platform</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Customers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Resources</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+            </ul>
+            <div class="actions">
+                <a href="">Sing in</a>
+                <button type="submit">Start free trial</button>
+            </div>
+          </div>
+        </div>
+      </nav>
 
     <section class="main">
         <h1>Construye tu negocio</h1>  <!-- etiqueta, mas pequeño # es texto más grande -->
-        <h3> Reto 1 </h3>
+        <!-- S1-Reto 1 -->
         <p> Iniciar un negocio es una aventura emocionante que puede ser muy rentable y que además es muy satisfactoria.
             Pero si no tienes mucho dinero, a veces se convierte en un verdadero reto.</p>
-        <h3> Reto 2 </h3>
+        <!-- S2-Reto 2 -->
             <p>
                 <b>Publique artículos al instante, genere más tráfico, haga crecer su lista de correo electrónico y 
                 vea el impacto de su blog en las ventas
@@ -58,11 +95,14 @@
                 <button type="submit"> Enviar &rarr; <!-- character de flecha &rarr --> </button>
 
             </form>
-            <h3>Reto 3</h3>
-            <img 
-                src="capterra.png" alt="Imagen capterra" style="width: 25vw; min-width: 140px;" />
+            <!--S1-Reto 3-->
+            
+            <figure class="banner">
+                <img src="capterra.png" alt="Imagen capterra" style="width: 25vw; min-width: 140px;" />
                 <!-- nombrar imagen con alt para busquedas rapidas de telefonos sin IA (accesibilidad) o si una url se rompe-->
+            </figure>
         </section>    
+        
         <section class="promo">
             <article class="imagen_video">
                 <video controls
@@ -78,13 +118,15 @@
                         <img src="https://images.vexels.com/media/users/3/206269/isolated/preview/5bf110f14d50531aaca26c251c3441aa-doodle-de-flecha-vertical.png">
                         
             </article>
-            <article> <!--tiene un mayor significado e implica que sus contenidos pueden ser tratados independientemente del documento que los contiene.-->
-                <h2>Publish to your blog in minutes, not hours.</h2>
+            <article class="publish"> <!--tiene un mayor significado e implica que sus contenidos pueden ser tratados independientemente del documento que los contiene.-->
+                <h3>Publish to your blog in minutes, not hours.</h3>
                 <p>Your blog is your most powerful asset to build, engage, and retain a loyal audience. But you don’t have hours to create content that may or may not work. With Matcha, instantly publish from our library of 10,000+ professionally written articles and build your email list faster with our powerful conversion tool.</p>
                 <form>
                     <p>Start publishing today:</p>
-                    <input type="email" placeholder="Enter email"/>
-                    <button> Star my trial </button>
+                    <div>
+                        <input type="text" placeholder="Enter email" />
+                        <button>Start My Trial</button>
+                      </div>
                 </form>
 
             </article>
