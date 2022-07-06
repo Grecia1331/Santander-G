@@ -1,29 +1,32 @@
-<!DOCTYPE html>  <!-- Especifica tipo de documento -->
+<!DOCTYPE html> <!-- Especifica tipo de documento -->
 <html lang="en">
-    <!-- Shift + ALt + F alinea el texto(anida) auto align...identado? -->
+<!-- Shift + ALt + F alinea el texto(anida) auto align...identado? -->
 
 <head>
-    <meta charset="UTF-8"> <!-- lenguaje..latin? -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">  <!-- ventana / si es scalable=no..el sitio no permite escalas-->
-    <title>Matcha</title> <!-- nombre que aparece en la pestaña, que es Matcha? -->
-        <!-- <style>
+  <meta charset="UTF-8"> <!-- lenguaje..latin? -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+  <!-- ventana / si es scalable=no..el sitio no permite escalas-->
+  <title>Matcha</title> <!-- nombre que aparece en la pestaña, que es Matcha? -->
+  <!-- <style>
             h1{
                 color: #025157
             }
         </style> Esto pondria a todos los h1 en un color pero es mala practica, mejor usar una hoja de estilos css-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        
-        <link rel="stylesheet" href="styles.css"> <!-- ligar hoja de estilos con index...href:url donde la va a buscar -->
-        <!-- Aquí vienen los enlaces a Bootstrap y styles.css -->  
-        <link rel="stylesheet" href="output.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="styles.css"> <!-- ligar hoja de estilos con index...href:url donde la va a buscar -->
+  <!-- Aquí vienen los enlaces a Bootstrap y styles.css -->
+  <link rel="stylesheet" href="output.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
 </head>
 
-<body> <!-- lo que se ve en el navegador -->
-    <!-- <section class="fixed_header">
+<body>
+  <!-- lo que se ve en el navegador -->
+  <!-- <section class="fixed_header">
         <header class="header">
              Regresar pagina principal
             <a href="/" class="logo">
@@ -46,352 +49,347 @@
     </section> -->
 
 
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Matcha</a>
-            <a href="#" class="logo">
-                <img src="https://getmatcha.com/wp-content/uploads/2020/01/Icon-green.png" alt="Matcha">
-            </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Platform</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Customers</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Resources</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-            </ul>
-            <div class="actions">
-                <a href="">Sing in</a>
-                <button type="submit">Start free trial</button>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Matcha</a>
+      <a href="#" class="logo">
+        <img src="https://getmatcha.com/wp-content/uploads/2020/01/Icon-green.png" alt="Matcha">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Platform</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Customers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Resources</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutUS.html">About</a>
+          </li>
+        </ul>
+        <div class="actions">
+          <a href="">Sing in</a>
+          <button type="submit">Start free trial</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="main">
+    <h1>Construye tu negocio</h1> <!-- etiqueta, mas pequeño # es texto más grande -->
+    <!-- S1-Reto 1 -->
+    <p> Iniciar un negocio es una aventura emocionante que puede ser muy rentable y que además es muy satisfactoria.
+      Pero si no tienes mucho dinero, a veces se convierte en un verdadero reto.</p>
+    <!-- S2-Reto 2 -->
+    <p>
+      <b>Publique artículos al instante, genere más tráfico, haga crecer su lista de correo electrónico y
+        vea el impacto de su blog en las ventas
+      </b>
+    </p>
+    <p>El dinero es importante pero
+      <strong>la salud</strong>, más.
+    </p>
+    <form>
+      <!-- cuando se crea un formulario es bueno ponerlo dentro de una estructura? -->
+
+      <input type="email" /> <!-- cuadro de entrada -->
+      <button type="submit"> Enviar &rarr;
+        <!-- character de flecha &rarr -->
+      </button>
+
+    </form>
+    <!--S1-Reto 3-->
+
+    <figure class="banner">
+      <img src="capterra.png" alt="Imagen capterra" style="width: 25vw; min-width: 140px;" />
+      <!-- nombrar imagen con alt para busquedas rapidas de telefonos sin IA (accesibilidad) o si una url se rompe-->
+    </figure>
+  </section>
+
+  <section class="promo">
+    <article class="imagen_video">
+      <video controls
+        poster="https://cdn.videvo.net/videvo_files/video/premium/video0036/thumbnails/computer_code00_small.jpg">
+
+        <source type="video/webm"
+          src="https://cdn.videvo.net/videvo_files/video/premium/video0036/small_watermarked/computer_code00_preview.webm" />
+        <source type="video/mp4"
+          src="https://cdn.videvo.net/videvo_files/video/premium/video0036/small_watermarked/computer_code00_preview.mp4" />
+      </video>
+      <img
+        src="https://images.vexels.com/media/users/3/206269/isolated/preview/5bf110f14d50531aaca26c251c3441aa-doodle-de-flecha-vertical.png">
+
+    </article>
+    <article class="publish">
+      <!--tiene un mayor significado e implica que sus contenidos pueden ser tratados independientemente del documento que los contiene.-->
+      <h3>Publish to your blog in minutes, not hours.</h3>
+      <p>Your blog is your most powerful asset to build, engage, and retain a loyal audience. But you don’t have hours
+        to create content that may or may not work. With Matcha, instantly publish from our library of 10,000+
+        professionally written articles and build your email list faster with our powerful conversion tool.</p>
+      <form>
+        <p>Start publishing today:</p>
+        <div>
+          <input type="text" placeholder="Enter email" />
+          <button>Start My Trial</button>
+        </div>
+      </form>
+
+    </article>
+  </section>
+  <br /> <!-- salto de linea-->
+  <br />
+  <br />
+  <section class="tablas">
+    <article class="tarjeta">
+      <div class="content">
+        <img src="https://getmatcha.com/wp-content/uploads/2020/04/feature-platform-1.png" alt="publish icon">
+        <h3>Fill your blog with engaging articles.</h3>
+        <p>
+          Publish to your blog in less time than it takes to drink your morning coffee.
+        </p>
+        <a href="">Publish instantly &rarr;</a>
+      </div>
+      <div class="icono">
+        <img src="https://getmatcha.com/wp-content/uploads/2020/04/feature-platform-3.png" alt="ROI example" />
+      </div>
+    </article>
+
+    <article class="tarjeta">
+      <div class="content">
+        <img src="https://getmatcha.com/wp-content/uploads/2020/07/feature-blog-email.png" alt="Site traffic icon" />
+        <h3>Attract and engage more website visitors.</h3>
+        <p>
+          Enhance your email, social media channels, and paid ads with content from Matcha.
+        </p>
+        <a href="">Get more site traffic &rarr;</a>
+      </div>
+      <div class="icono">
+        <img src="https://getmatcha.com/wp-content/uploads/2020/04/feature-platform-3.png" alt="ROI example" />
+      </div>
+    </article>
+
+    <article class="tarjeta">
+      <div class="content">
+        <h3></h3>
+        <img src="https://getmatcha.com/wp-content/uploads/2020/04/feature-platform-3.png" alt="Capture icon" />
+        <h3>Capture more emails with locked content.</h3>
+        <p>
+          Convert 10x more of your traffic into subscribers and nurture them to a sale.
+        </p>
+        <a href="">Grow your email list faster &rarr;</a>
+      </div>
+      <div class="icono">
+        <img src="https://getmatcha.com/wp-content/uploads/2020/04/feature-platform-3.png" alt="ROI example" />
+      </div>
+    </article>
+
+    <article class="tarjeta">
+      <div class="content">
+        <img src="https://getmatcha.com/wp-content/uploads/2020/04/feature-library-1.png" alt="ROI icon" />
+        <h3>Optimize your blog’s performance.</h3>
+        <p>
+          See what content delivers the most traffic, engagement, email subscribers, and sales.
+        </p>
+        <a href="">See content’s ROI &rarr;</a>
+      </div>
+      <div class="icono">
+        <img src="https://getmatcha.com/wp-content/uploads/2020/04/feature-platform-3.png" alt="ROI example" />
+      </div>
+    </article>
+  </section>
+
+  <section class="success-stories">
+    <article class="overview">
+      <h2>Growing ecommerce brands rely on Matcha.</h2>
+      <p>
+        Are you tired of wasting time publishing blog articles to only see a
+        trickle of traffic and no impact on sales? Join hundreds of business
+        owners and ecommerce marketers who rely on Matcha for quality content
+        and consistent performance from their blogs.
+      </p>
+      <button>
+        Who Uses Matcha?
+      </button>
+      <figure class="brands">
+        <img src="https://getmatcha.com/wp-content/uploads/2019/09/brands_group.png" alt="Brands">
+      </figure>
+    </article>
+    <article class="stories-carousel">
+      <section class="card-container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+          <div class="carousel-inner" style="padding-bottom: 45px;">
+            <div class="carousel-item active">
+              <!-- Tarjeta 1: Everly -->
+              <div class="card">
+                <img src="https://getmatcha.com/wp-content/uploads/2019/05/profile-headshot-square.png"
+                  class="card-img-top" alt="Everly">
+                <div class="card-body">
+                  <div class="card-circle everly">
+                    <img src="https://getmatcha.com/wp-content/uploads/2019/05/everly_logo_blue_v3_x60@2x.png"
+                      alt="Everly">
+                  </div>
+                  <h4>Everly</h4>
+                  <h3>
+                    Early-Stage CPG Brand Increases Lead Conversion 20x,
+                    Ecommerce Revenue 20%
+                  </h3>
+                  <div class="results">
+                    <img src="https://indyme.com/wp-content/uploads/2020/11/shopping-cart-icon.png" alt="Cart icon">
+                    <p>22% of monthly revenue influenced by content</p>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <button>See Case Study</button>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <img src="https://getmatcha.com/wp-content/uploads/2019/05/profile-headshot-square.png"
+                  class="card-img-top" alt="Everly">
+                <div class="card-body">
+                  <div class="card-circle everly">
+                    <img src="https://getmatcha.com/wp-content/uploads/2019/05/everly_logo_blue_v3_x60@2x.png"
+                      alt="Everly">
+                  </div>
+                  <h4>Everly</h4>
+                  <h3>
+                    Early-Stage CPG Brand Increases Lead Conversion 20x,
+                    Ecommerce Revenue 20%
+                  </h3>
+                  <div class="results">
+                    <img src="https://indyme.com/wp-content/uploads/2020/11/shopping-cart-icon.png" alt="Cart icon">
+                    <p>22% of monthly revenue influenced by content</p>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <button>See Case Study</button>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="..." class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+        </div>
+      </section>
+    </article>
+  </section>
+
+  <section class="blog">
+    <section class="container blog">
+      <div class="row">
+        <div class="col">
+          <h2 class="title">Learn how to grow your ecommerce business.</h2>
+          <article class="process-list">
+            <div class="process">
+              <div class="process-icon">
+                <img src="https://cdn.iconscout.com/icon/free/png-256/build-20-454867.png" alt="Build icon" />
+              </div>
+              <div class="process-description">
+                <h3>Build</h3>
+                <p>and scale your ecommerce store</p>
+              </div>
+            </div>
+            <div class="process">
+              <div class="process-icon">
+                <img src="https://catwatchful.com/main/wp-content/uploads/2014/09/rocket-icon.png" alt="Attract icon" />
+              </div>
+              <div class="process-description">
+                <h3>Attract</h3>
+                <p>your target audience and grow site traffic</p>
+              </div>
+            </div>
+            <div class="process">
+              <div class="process-icon">
+                <img src="https://icon-library.com/images/icon-convert/icon-convert-2.jpg" alt="Convert icon" />
+              </div>
+              <div class="process-description">
+                <h3>Convert</h3>
+                <p>readers to subscribers and customers</p>
+              </div>
+            </div>
+          </article>
+          <button>Read the blog</button>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="https://getmatcha.com/wp-content/uploads/2019/03/david-marcu-114194-1052x699.jpg"
+              class="card-img-top" alt="Ecommerce Blogging: The 2020 Guide for Online Stores and DTC Brands" />
+            <div class="card-body">
+              <h4 class="card-title">
+                Ecommerce Blogging: The 2020 Guide for Online Stores and DTC Brands
+              </h4>
+              <p class="metadata">
+                <strong class="category">Performance Blogging </strong>
+                <strong class="read-time">• 21 mins read</strong>
+              </p>
+              <p class="card-text">
+                Table of ContentsWhy Ecommerce Businesses Need a Blog in
+                2020Document Your Ecommerce Blog StrategyPublication: How to Create
+                High-Performing Blog ContentDistribution:...
+                <span class="read-more">+ <a href="">Read More</a></span>
+              </p>
+              <div class="author d-flex align-items-center">
+                <img src="https://secure.gravatar.com/avatar/b1c37d9c6b3a36a5eb64d7112bf71ca4?s=96&d=retro&r=g"
+                  alt="Shauna Ward" />
+                <p>Shauna Ward</p>
+              </div>
             </div>
           </div>
         </div>
-      </nav>
-
-    <section class="main">
-        <h1>Construye tu negocio</h1>  <!-- etiqueta, mas pequeño # es texto más grande -->
-        <!-- S1-Reto 1 -->
-        <p> Iniciar un negocio es una aventura emocionante que puede ser muy rentable y que además es muy satisfactoria.
-            Pero si no tienes mucho dinero, a veces se convierte en un verdadero reto.</p>
-        <!-- S2-Reto 2 -->
-            <p>
-                <b>Publique artículos al instante, genere más tráfico, haga crecer su lista de correo electrónico y 
-                vea el impacto de su blog en las ventas
-                </b>
-            </p>
-            <p>El dinero es importante pero 
-                <strong>la salud</strong>, más.
-            </p>
-            <form> <!-- cuando se crea un formulario es bueno ponerlo dentro de una estructura? -->
-
-                <input type="email"/> <!-- cuadro de entrada -->
-                <button type="submit"> Enviar &rarr; <!-- character de flecha &rarr --> </button>
-
-            </form>
-            <!--S1-Reto 3-->
-            
-            <figure class="banner">
-                <img src="capterra.png" alt="Imagen capterra" style="width: 25vw; min-width: 140px;" />
-                <!-- nombrar imagen con alt para busquedas rapidas de telefonos sin IA (accesibilidad) o si una url se rompe-->
-            </figure>
-        </section>    
-        
-        <section class="promo">
-            <article class="imagen_video">
-                <video controls
-                        poster="https://cdn.videvo.net/videvo_files/video/premium/video0036/thumbnails/computer_code00_small.jpg">
-
-                        <source
-                            type="video/webm"
-                            src="https://cdn.videvo.net/videvo_files/video/premium/video0036/small_watermarked/computer_code00_preview.webm"/>
-                        <source
-                            type="video/mp4" 
-                            src="https://cdn.videvo.net/videvo_files/video/premium/video0036/small_watermarked/computer_code00_preview.mp4"/>
-                </video>
-                        <img src="https://images.vexels.com/media/users/3/206269/isolated/preview/5bf110f14d50531aaca26c251c3441aa-doodle-de-flecha-vertical.png">
-                        
-            </article>
-            <article class="publish"> <!--tiene un mayor significado e implica que sus contenidos pueden ser tratados independientemente del documento que los contiene.-->
-                <h3>Publish to your blog in minutes, not hours.</h3>
-                <p>Your blog is your most powerful asset to build, engage, and retain a loyal audience. But you don’t have hours to create content that may or may not work. With Matcha, instantly publish from our library of 10,000+ professionally written articles and build your email list faster with our powerful conversion tool.</p>
-                <form>
-                    <p>Start publishing today:</p>
-                    <div>
-                        <input type="text" placeholder="Enter email" />
-                        <button>Start My Trial</button>
-                      </div>
-                </form>
-
-            </article>
-        </section>  
-            <br/> <!-- salto de linea-->
-            <br/>
-            <br/>
-        <section class="tablas">
-            <article class="tarjeta">
-                <div class="content">
-                    <img src="https://getmatcha.com/wp-content/uploads/2020/04/feature-platform-1.png" alt="publish icon">
-                    <h3>Fill your blog with engaging articles.</h3>
-                    <p>
-                        Publish to your blog in less time than it takes to drink your morning coffee.
-                    </p>
-                    <a href="">Publish instantly &rarr;</a>
-                </div>
-                <div class="icono">
-                    <img src="https://getmatcha.com/wp-content/uploads/2020/04/feature-platform-3.png"
-                         alt="ROI example"/> 
-                </div>
-            </article>
-
-            <article class="tarjeta">
-                <div class="content">
-                    <img src="https://getmatcha.com/wp-content/uploads/2020/07/feature-blog-email.png" 
-                         alt="Site traffic icon"/>
-                    <h3>Attract and engage more website visitors.</h3>
-                    <p>
-                        Enhance your email, social media channels, and paid ads with content from Matcha.
-                    </p>
-                    <a href="">Get more site traffic &rarr;</a>
-                </div>
-                <div class="icono">
-                    <img src="https://getmatcha.com/wp-content/uploads/2020/04/feature-platform-3.png"
-                         alt="ROI example"/> 
-                </div>
-            </article>
-
-            <article class="tarjeta">
-                <div class="content">
-                    <h3></h3>
-                    <img src="https://getmatcha.com/wp-content/uploads/2020/04/feature-platform-3.png"
-                         alt="Capture icon"/>
-                    <h3>Capture more emails with locked content.</h3>
-                    <p>
-                        Convert 10x more of your traffic into subscribers and nurture them to a sale.
-                    </p>
-                    <a href="">Grow your email list faster &rarr;</a>
-                </div>
-                <div class="icono">
-                    <img src="https://getmatcha.com/wp-content/uploads/2020/04/feature-platform-3.png"
-                         alt="ROI example"/> 
-                </div>
-            </article>
-
-            <article class="tarjeta">
-                <div class="content">
-                    <img src="https://getmatcha.com/wp-content/uploads/2020/04/feature-library-1.png"
-                         alt="ROI icon"/>
-                    <h3>Optimize your blog’s performance.</h3>
-                    <p>
-                        See what content delivers the most traffic, engagement, email subscribers, and sales.
-                    </p>
-                    <a href="">See content’s ROI &rarr;</a>
-                </div>
-                <div class="icono">
-                    <img src="https://getmatcha.com/wp-content/uploads/2020/04/feature-platform-3.png"
-                         alt="ROI example"/> 
-                </div>
-            </article>
-        </section>
-
-        <section class="success-stories">
-            <article class="overview">
-              <h2>Growing ecommerce brands rely on Matcha.</h2>
-              <p>
-                Are you tired of wasting time publishing blog articles to only see a
-                trickle of traffic and no impact on sales? Join hundreds of business
-                owners and ecommerce marketers who rely on Matcha for quality content
-                and consistent performance from their blogs.
+        <div class="col">
+          <div class="card">
+            <img src="https://getmatcha.com/wp-content/uploads/2019/06/arnel-hasanovic-MNd-Rka1o0Q-1049x699.jpg"
+              class="card-img-top" alt="What Is Licensed Content and How Does It Help Your Business Grow?" />
+            <div class="card-body">
+              <h4 class="card-title">
+                What Is Licensed Content and How Does It Help Your Business Grow?
+              </h4>
+              <p class="metadata">
+                <strong class="category">Performance Blogging </strong>
+                <strong class="read-time">• 6 mins read</strong>
               </p>
-              <button>
-                Who Uses Matcha?
-              </button>
-              <figure class="brands">
-                <img src="https://getmatcha.com/wp-content/uploads/2019/09/brands_group.png" alt="Brands">
-              </figure>
-            </article>
-            <article class="stories-carousel">
-              <section class="card-container">
-                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-                  <div class="carousel-inner" style="padding-bottom: 45px;">
-                    <div class="carousel-item active">
-                      <!-- Tarjeta 1: Everly -->
-                      <div class="card">
-                        <img src="https://getmatcha.com/wp-content/uploads/2019/05/profile-headshot-square.png"
-                          class="card-img-top" alt="Everly">
-                        <div class="card-body">
-                          <div class="card-circle everly">
-                            <img src="https://getmatcha.com/wp-content/uploads/2019/05/everly_logo_blue_v3_x60@2x.png"
-                              alt="Everly">
-                          </div>
-                          <h4>Everly</h4>
-                          <h3>
-                            Early-Stage CPG Brand Increases Lead Conversion 20x,
-                            Ecommerce Revenue 20%
-                          </h3>
-                          <div class="results">
-                            <img src="https://indyme.com/wp-content/uploads/2020/11/shopping-cart-icon.png" alt="Cart icon">
-                            <p>22% of monthly revenue influenced by content</p>
-                          </div>
-                        </div>
-                        <div class="card-footer">
-                          <button>See Case Study</button>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="carousel-item">
-                      <div class="card">
-                        <img src="https://getmatcha.com/wp-content/uploads/2019/05/profile-headshot-square.png"
-                          class="card-img-top" alt="Everly">
-                        <div class="card-body">
-                          <div class="card-circle everly">
-                            <img src="https://getmatcha.com/wp-content/uploads/2019/05/everly_logo_blue_v3_x60@2x.png"
-                              alt="Everly">
-                          </div>
-                          <h4>Everly</h4>
-                          <h3>
-                            Early-Stage CPG Brand Increases Lead Conversion 20x,
-                            Ecommerce Revenue 20%
-                          </h3>
-                          <div class="results">
-                            <img src="https://indyme.com/wp-content/uploads/2020/11/shopping-cart-icon.png" alt="Cart icon">
-                            <p>22% of monthly revenue influenced by content</p>
-                          </div>
-                        </div>
-                        <div class="card-footer">
-                          <button>See Case Study</button>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="carousel-item">
-                      <img src="..." class="d-block w-100" alt="...">
-                    </div>
-                  </div>
-                  <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                      aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                      aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                      aria-label="Slide 3"></button>
-                  </div>
-                </div>
-              </section>
-            </article>
-          </section>
-    
-          <section class="blog">
-            <section class="container blog">
-              <div class="row">
-                <div class="col">
-                  <h2 class="title">Learn how to grow your ecommerce business.</h2>
-                  <article class="process-list">
-                    <div class="process">
-                      <div class="process-icon">
-                        <img src="https://cdn.iconscout.com/icon/free/png-256/build-20-454867.png" alt="Build icon" />
-                      </div>
-                      <div class="process-description">
-                        <h3>Build</h3>
-                        <p>and scale your ecommerce store</p>
-                      </div>
-                    </div>
-                    <div class="process">
-                      <div class="process-icon">
-                        <img src="https://catwatchful.com/main/wp-content/uploads/2014/09/rocket-icon.png" alt="Attract icon" />
-                      </div>
-                      <div class="process-description">
-                        <h3>Attract</h3>
-                        <p>your target audience and grow site traffic</p>
-                      </div>
-                    </div>
-                    <div class="process">
-                      <div class="process-icon">
-                        <img src="https://icon-library.com/images/icon-convert/icon-convert-2.jpg" alt="Convert icon" />
-                      </div>
-                      <div class="process-description">
-                        <h3>Convert</h3>
-                        <p>readers to subscribers and customers</p>
-                      </div>
-                    </div>
-                  </article>
-                  <button>Read the blog</button>
-                </div>
-                <div class="col">
-                  <div class="card">
-                    <img
-                      src="https://getmatcha.com/wp-content/uploads/2019/03/david-marcu-114194-1052x699.jpg"
-                      class="card-img-top"
-                      alt="Ecommerce Blogging: The 2020 Guide for Online Stores and DTC Brands"
-                    />
-                    <div class="card-body">
-                      <h4 class="card-title">
-                        Ecommerce Blogging: The 2020 Guide for Online Stores and DTC Brands
-                      </h4>
-                      <p class="metadata">
-                        <strong class="category">Performance Blogging </strong>
-                        <strong class="read-time">• 21 mins read</strong>
-                      </p>
-                      <p class="card-text">
-                        Table of ContentsWhy Ecommerce Businesses Need a Blog in
-                        2020Document Your Ecommerce Blog StrategyPublication: How to Create
-                        High-Performing Blog ContentDistribution:...
-                        <span class="read-more">+ <a href="">Read More</a></span>
-                      </p>
-                      <div class="author d-flex align-items-center">
-                        <img
-                          src="https://secure.gravatar.com/avatar/b1c37d9c6b3a36a5eb64d7112bf71ca4?s=96&d=retro&r=g"
-                          alt="Shauna Ward"
-                        />
-                        <p>Shauna Ward</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card">
-                    <img
-                     src="https://getmatcha.com/wp-content/uploads/2019/06/arnel-hasanovic-MNd-Rka1o0Q-1049x699.jpg" class="card-img-top" alt="What Is Licensed Content and How Does It Help Your Business Grow?"/>
-                    <div class="card-body">
-                      <h4 class="card-title">
-                        What Is Licensed Content and How Does It Help Your Business Grow?
-                      </h4>
-                      <p class="metadata">
-                        <strong class="category">Performance Blogging </strong>
-                        <strong class="read-time">• 6 mins read</strong>
-                      </p>
-                      <p class="card-text">
-                        TL;DR: Licensed content, sometimes called syndicated content, is content produced by a professional publisher that can be legally licensed for...
-                        <span class="read-more">+ <a href="">Read More</a></span>
-                      </p>
-                      <div class="author d-flex align-items-center">
-                        <img
-                        src="https://secure.gravatar.com/avatar/c2f0381c76fae0875a4c15deb4e0a2f8?s=96&amp;d=retro&amp;r=g" alt="Rob Glover"
-                        />
-                        <p>Rob Glover</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              <p class="card-text">
+                TL;DR: Licensed content, sometimes called syndicated content, is content produced by a professional
+                publisher that can be legally licensed for...
+                <span class="read-more">+ <a href="">Read More</a></span>
+              </p>
+              <div class="author d-flex align-items-center">
+                <img src="https://secure.gravatar.com/avatar/c2f0381c76fae0875a4c15deb4e0a2f8?s=96&amp;d=retro&amp;r=g"
+                  alt="Rob Glover" />
+                <p>Rob Glover</p>
               </div>
-            </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-          </section>
+  </section>
 
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
